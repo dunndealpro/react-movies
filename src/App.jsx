@@ -5,6 +5,9 @@ import MovieListPage from './pages/MoviesListPage/MovieListPage';
 import MoviesDetailPage from './pages/MoviesDetailPage/MoviesDetailPage';
 import ActorsListPage from './pages/ActorsListPage/ActorsListPage'
 import NavBar from './components/NavBar/NavBar'
+import { movies } from "./data.js";
+// src/data.js
+
 
 import './App.css';
 
