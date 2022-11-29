@@ -1,8 +1,8 @@
 // import '../MovieCard/MovieCard.css';
-
+import { Link } from 'react-router-dom';
 export default function MovieCard({movie}){
 const cardStyle = {
-    // width: "900px",
+    // width: "500px",
     // height: "500px",
     color: "white",
     backgroundImage: `url(${movie.posterPath})`,
@@ -11,13 +11,12 @@ const cardStyle = {
 }
 
     return(
-        
-            <div style={cardStyle}className="background-images">                
+        <Link to={`/movies/${movie.title}`}>
+            <div style={cardStyle}>                
                 {movie.title}<br></br>
-                Released: {movie.releaseDate}<br></br>
-                
+                Released: {movie.releaseDate}            
             </div>
-        
+        </Link>
     )
 
     // {movie.posterPath}
