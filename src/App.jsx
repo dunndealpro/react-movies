@@ -21,7 +21,7 @@ function App() {
 
   return (
    <main className = "App">
-     REACT-Movies
+     {/* REACT-Movies */}
 
      { user ?
      <>

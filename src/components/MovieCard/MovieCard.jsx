@@ -4,10 +4,18 @@ export default function MovieCard({movie}){
 const cardStyle = {
     // width: "500px",
     // height: "500px",
-    color: "white",
+    // color: "white",
     backgroundImage: `url(${movie.posterPath})`,
-    margin: "2px",
-    border: "solid magenta 2px"
+   backgroundSize: "cover",
+    width:"20vw",
+    height: "50vh",
+    margin: "10px",
+    border: "solid black 2px",
+    borderRadius: "10px",
+    // display: "flex",
+    // flexDirection: "row",
+    // alignItems: "center",
+    // textAlign: 'center'
 }
 
     return(

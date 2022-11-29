@@ -7,10 +7,10 @@ export default function MovieListPage() {
   console.log('movie list: ',movies)
   return (
     
-    <div className = "movie-list-page">
+    <div >
        {/* <NavBar user={user}/> */}
-      <h1>MovieListPage</h1>
-      <ul className = "movies-list">
+      <h1>Movies</h1>
+      <ul className = "movie-list">
         {movies.map((movie) => (
           <MovieCard key={movie.title} movie={movie} />
         ))}
