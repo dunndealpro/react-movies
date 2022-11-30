@@ -2,5 +2,22 @@
 display: flex;
 flex-direction: row-space;
 justify-content: space-around;
+align-items: center;
 margin: 10px;
+background-color: aquamarine;
+height: 10vh;
+border-radius: 20px;
+transform: translateY(2vh);
+}
+
+.nav-link{
+     width: 100px;
+    height: 30px;
+}
+
+.nav-link:hover{
+    color:white;
+    background-color: rgb(42, 165, 128);    
+    border-radius: 5px;
+    border: solid white 1px;
 }

@@ -6,8 +6,6 @@ import MoviesDetailPage from './pages/MoviesDetailPage/MoviesDetailPage';
 import ActorsListPage from './pages/ActorsListPage/ActorsListPage'
 import NavBar from './components/NavBar/NavBar'
 import { movies } from "./data.js";
-// src/data.js
-
 
 import './App.css';
 
@@ -20,20 +18,16 @@ function App() {
   }
 
   return (
-   <main className = "App">
-     {/* REACT-Movies */}
-
+   <main className = "App">  
      { user ?
      <>
-    <NavBar user={user}/>
-    
+    <NavBar user={user}/>    
      <Routes>
        <Route path='/' element={<MovieListPage/>}/>
        <Route path="/movies/:movieTitle" element={<MoviesDetailPage/>}/>
        <Route path="/actors" element={<ActorsListPage/>}/>
      </Routes>
-     </>
-     
+     </>    
       :
       <LoginPage newUser = {newUser} />
     }

@@ -1,16 +1,15 @@
-.movie-card {
-    /* // width: "500px",
-    // height: "500px", */
-    color: "white";
-    background-image: `url(${movie.posterPath})`;
-   background-size: "cover";
-    width:"20vw";
-    height: "50vh";
-    margin: "10px";
-    border: "solid black 2px";
-    borderRadius: "10px";
-    /* // display: "flex",
-    // flexDirection: "row",
-    // alignItems: "center",
-    // textAlign: 'center' */
+.movie-title{
+    text-align: center;
+    color: black;
+    background-color: rgba(255,255,255,.75);
+    width: 80%;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin: 20px;        
+}
+
+.movie-title:hover{
+    background-color: rgba(255,255,255,1);
+    font-weight: bold;
+    transform: scale(1.1);
 }

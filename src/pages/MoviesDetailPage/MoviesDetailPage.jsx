@@ -4,8 +4,7 @@ import {Routes, Route, useParams} from 'react-router-dom';
 export default function MovieDetailPage() {
   
   let movieTitle = useParams()  
-  // console.log('Clicked: ', movieTitle)
-  // console.log('All movies', movies)
+
 console.log(movieTitle.movieTitle)
 
   let movieInfo = movies.find(movies => movies.title === movieTitle.movieTitle)
